@@ -1,7 +1,7 @@
+import 'react-calendar-heatmap/dist/styles.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Profile } from './pages/Profile';
-import { Repo } from './pages/Repo';
-import GlobalStyles from './styles/GlobalSyles'
+import GlobalStyles from './styles/GlobalSyles';
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Profile />} />
         <Route path="/:username" element={<Profile />} />
-        <Route path="/:username/:repo" element={<Repo />} />
       </Routes>
       <GlobalStyles />
     </BrowserRouter>

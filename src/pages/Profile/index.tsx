@@ -1,6 +1,7 @@
 import { Header } from '../../components/Header';
 import { ProfileData } from '../../components/ProfileData';
-import { Container, LeftSide, Main, RightSide } from './styles';
+import { RepoCard } from '../../components/RepoCard';
+import { Container, LeftSide, Main, RightSide, Repos } from './styles';
 
 export function Profile() {
   return (
@@ -22,7 +23,24 @@ export function Profile() {
 
             />
           </LeftSide>
-          <RightSide></RightSide>
+          <RightSide>
+            <Repos>
+              <h2>Random Repos</h2>
+              <div>
+                {[1,2,3,4,5,6].map(n => (
+                  <RepoCard 
+                    key={n}
+                    repolink={'#'}
+                    reponame={'youtube-content'}
+                    description={'Contains all of my youtube lessons'}
+                    languague={n % 3 === 0 ? 'Javascript' : 'Typescript'}
+                    stars={0}
+                    forks={4}
+                  />
+                ))}
+              </div>
+            </Repos>
+          </RightSide>
         </Main>
       </Container>
     </>
