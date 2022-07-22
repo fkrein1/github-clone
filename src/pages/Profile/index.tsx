@@ -1,7 +1,8 @@
 import { Header } from '../../components/Header';
 import { ProfileData } from '../../components/ProfileData';
+import { RandomCalendar } from '../../components/RandomCalendar';
 import { RepoCard } from '../../components/RepoCard';
-import { Container, LeftSide, Main, RightSide, Repos } from './styles';
+import { Container, LeftSide, Main, RightSide, Repos, CalendarHeading } from './styles';
 
 export function Profile() {
   return (
@@ -40,6 +41,13 @@ export function Profile() {
                 ))}
               </div>
             </Repos>
+
+            <CalendarHeading>
+              Random calendar
+            </CalendarHeading>
+            
+            <RandomCalendar />
+
           </RightSide>
         </Main>
       </Container>
