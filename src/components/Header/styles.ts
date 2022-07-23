@@ -25,11 +25,6 @@ export const SearchForm = styled.form`
     border-radius: 6px;
     padding: 7px 12px;
     width: 100%;
-
-    &:focus {
-      width: 318px;
-    }
-
-    transition: width 200ms ease-out, color 200ms ease-out;
+    color: var(--primary)
   }
 `;

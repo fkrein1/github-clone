@@ -26,7 +26,7 @@ export function RepoCard(props: RepoCardProps) {
       <Topside>
         <header>
           <RepoIcon />
-          <a href={props.repolink}>{props.reponame}</a>
+          <a href={props.repolink} target="_blank">{props.reponame}</a>
         </header>
         <p>{props.description}</p>
       </Topside>
