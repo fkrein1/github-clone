@@ -71,6 +71,9 @@ export const Bottomside = styled.div`
     &.typescript {
       background: var(--typescript);
     }
+    &.html {
+      background: var(--html);
+    }
   }
 `;
 

@@ -2,6 +2,7 @@ import {
   RiBuilding4Line,
   RiGroupLine,
   RiLinksLine,
+  RiMapPin2Line,
   RiMailLine,
 } from 'react-icons/ri';
 import styled, { css } from 'styled-components';
@@ -108,7 +109,7 @@ export const WebsiteIcon = styled(RiLinksLine)`
   ${iconCSS}
 `;
 
-export const LocationIcon = styled(RiLinksLine)`
+export const LocationIcon = styled(RiMapPin2Line)`
   ${iconCSS}
 `;
 

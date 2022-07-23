@@ -47,5 +47,6 @@ export default createGlobalStyle`
     --javascript: #f1e05a;
     --typescript: #2b7489;
     --other-language: #8257e5;
+    --html: #8257e5;
   }
 `;
