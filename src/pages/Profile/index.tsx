@@ -57,7 +57,7 @@ export function Profile() {
   }
 
   if (!data?.user || !data?.repos) {
-    return <h1>Loading...</h1>;
+    return <></>;
   }
 
   return (
